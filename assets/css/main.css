@@ -100,10 +100,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #0a66c2 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #0a66c2 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #0a66c2 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #0a66c2 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3086,7 +3086,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 2em 5em 2em 5em ;
+			padding: 1.5em 5em 1.5em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3134,7 +3134,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 1.5em 5em 1.5em 5em ;
 				}
 
 		}
@@ -3146,7 +3146,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 1.5em 5em 1.5em 5em ;
 				}
 
 		}
@@ -3167,7 +3167,7 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 1.5em 5em 1.5em 5em ;
 				}
 
 					#header.alt h1 {
@@ -3183,7 +3183,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 1em 1.5em 1em 1.5em ;
 				}
 
 		}
@@ -3195,7 +3195,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 1em 1.5em 1em 1.5em ;
 				}
 
 		}
@@ -3293,6 +3293,7 @@ input, select, textarea {
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
+					color: #000;
 				}
 
 					#nav ul li a:hover {
@@ -3391,7 +3392,9 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				/* background-color: rgba(222, 222, 222, 0.25); */
+				background-color: #0a66c2c7;
+				color: #fff !important;
 			}
 
 			#main input[type="submit"]:active,
@@ -3787,6 +3790,40 @@ input, select, textarea {
 			}
 
 		}
+
+/* Formação */
+		.formacao-imgs img {
+			width: 130px;
+			position: absolute;
+			top: 40px;
+			left: 49px;
+		}
+		@media only screen and (max-width: 575.98px) {
+			.formacao-imgs img {
+				width: 80px;
+				top: 28px;
+				left: 30px;
+			}
+		}
+
+		.formacao-imgs:before {
+			opacity: 0;
+		}
+
+		.formacao-imgs.metropolitana img {
+			width: 120px;
+			border-radius: 3px;
+			top: 52px;
+			left: 55px;
+		}
+		@media only screen and (max-width: 575.98px) {
+			.formacao-imgs.metropolitana img {
+				width: 74px;
+				top: 35px;
+				left: 34px;
+			}
+		}
+
 /* WhatsApp */
 
 		.wpp-conversation {
@@ -3814,6 +3851,28 @@ input, select, textarea {
 			line-height: 1.7em;
 		}
 
+		@media only screen and (max-width: 575.98px) {
+			.wpp-conversation #wpp-icon:before {
+				width: 2em;
+				height: 2em;
+				font-size: 2em;
+				line-height: 2em;
+			}
+		}
+
 		.wpp-conversation #wpp-icon:hover {
 			opacity: 1;
+		}
+
+		.wpp-conversation {
+			animation: tremer .8s;
+  			animation-iteration-count: 300;
+		}
+
+		@keyframes tremer {
+			0% {padding: 0;}
+			25% {padding-bottom: 8px;}
+			50% {padding-bottom: 0;}
+			75% {padding-bottom: -8px;}
+			100% {padding-bottom: 0;}
 		}
