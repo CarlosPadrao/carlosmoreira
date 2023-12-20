@@ -3394,6 +3394,13 @@ input, select, textarea {
 				box-shadow: none;
 			}
 
+			@media only screen and (max-width: 575.98px) {
+				#main .button.btn-wpp {
+					margin-top: 20px;
+				}
+			}
+
+
 			#main input[type="submit"]:hover,
 			#main input[type="reset"]:hover,
 			#main input[type="button"]:hover,
@@ -3806,7 +3813,12 @@ input, select, textarea {
 	}
 
 	#exp img {
-		max-width: 180px;
+		width: 180px;
+		max-width: 100%;
+	}
+	@media only screen and (max-width: 575.98px) {
+		#exp img {
+		}
 	}
 
 	#perfil .perfil {
@@ -3823,7 +3835,6 @@ input, select, textarea {
 		width: 130px;
 	}
 	@media only screen and (max-width: 575.98px) {
-		
 	}
 
 /* WhatsApp */
