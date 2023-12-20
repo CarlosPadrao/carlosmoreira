@@ -3386,6 +3386,13 @@ input, select, textarea {
 			box-shadow: inset 0 0 0 1px #dddddd;
 			color: #636363 !important;
 		}
+			#main .button.btn-wpp {
+				border-color: #25d366;
+				background-color: #25d366;
+				opacity: 1;
+				color: #fff !important;
+				box-shadow: none;
+			}
 
 			#main input[type="submit"]:hover,
 			#main input[type="reset"]:hover,
@@ -3393,8 +3400,8 @@ input, select, textarea {
 			#main button:hover,
 			#main .button:hover {
 				/* background-color: rgba(222, 222, 222, 0.25); */
-				background-color: #0a66c2c7;
-				color: #fff !important;
+				/* background-color: #0a66c2c7; */
+				opacity: .8;
 			}
 
 			#main input[type="submit"]:active,
@@ -3588,7 +3595,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 2.5em 5em 2.5em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3791,88 +3798,83 @@ input, select, textarea {
 
 		}
 
+
+/* CUSTOM CSS */
+
+	#exp {
+		
+	}
+
+	#exp img {
+		max-width: 180px;
+	}
+
+	#perfil .perfil {
+	}
+
+	#perfil .open-to-work {
+		position: absolute;
+		top: 10px;
+	}
+
 /* Formação */
-		.formacao-imgs img {
-			width: 130px;
-			position: absolute;
-			top: 40px;
-			left: 49px;
-		}
-		@media only screen and (max-width: 575.98px) {
-			.formacao-imgs img {
-				width: 80px;
-				top: 28px;
-				left: 30px;
-			}
-		}
 
-		.formacao-imgs:before {
-			opacity: 0;
-		}
-
-		.formacao-imgs.metropolitana img {
-			width: 120px;
-			border-radius: 3px;
-			top: 52px;
-			left: 55px;
-		}
-		@media only screen and (max-width: 575.98px) {
-			.formacao-imgs.metropolitana img {
-				width: 74px;
-				top: 35px;
-				left: 34px;
-			}
-		}
+	.formacao-imgs {
+		width: 130px;
+	}
+	@media only screen and (max-width: 575.98px) {
+		
+	}
 
 /* WhatsApp */
 
-		.wpp-conversation {
-			position: fixed;
-			bottom: 4%;
-			right: .8%;
-		}
+	.wpp-conversation {
+		position: fixed;
+		bottom: 4%;
+		right: .8%;
+	}
 
-		.wpp-conversation ul {
-			margin: 0;
-		}
+	.wpp-conversation ul {
+		margin: 0;
+	}
 
-		.wpp-conversation #wpp-icon {
-			border-color: #25d366;
-			background-color: #25d366;
-			opacity: .9;
-		}
+	.wpp-conversation #wpp-icon {
+		border-color: #25d366;
+		background-color: #25d366;
+		opacity: .9;
+	}
 
+	.wpp-conversation #wpp-icon:before {
+		color: #fff;
+		cursor: pointer;
+		width: 1.7em;
+		height: 1.7em;
+		font-size: 1.7em;
+		line-height: 1.7em;
+	}
+
+	@media only screen and (max-width: 575.98px) {
 		.wpp-conversation #wpp-icon:before {
-			color: #fff;
-			cursor: pointer;
-			width: 1.7em;
-			height: 1.7em;
-			font-size: 1.7em;
-			line-height: 1.7em;
+			width: 2em;
+			height: 2em;
+			font-size: 2em;
+			line-height: 2em;
 		}
+	}
 
-		@media only screen and (max-width: 575.98px) {
-			.wpp-conversation #wpp-icon:before {
-				width: 2em;
-				height: 2em;
-				font-size: 2em;
-				line-height: 2em;
-			}
-		}
+	.wpp-conversation #wpp-icon:hover {
+		opacity: 1;
+	}
 
-		.wpp-conversation #wpp-icon:hover {
-			opacity: 1;
-		}
+	.wpp-conversation {
+		animation: tremer .8s;
+		animation-iteration-count: 300;
+	}
 
-		.wpp-conversation {
-			animation: tremer .8s;
-  			animation-iteration-count: 300;
-		}
-
-		@keyframes tremer {
-			0% {padding: 0;}
-			25% {padding-bottom: 8px;}
-			50% {padding-bottom: 0;}
-			75% {padding-bottom: -8px;}
-			100% {padding-bottom: 0;}
-		}
+	@keyframes tremer {
+		0% {padding: 0;}
+		25% {padding-bottom: 8px;}
+		50% {padding-bottom: 0;}
+		75% {padding-bottom: -8px;}
+		100% {padding-bottom: 0;}
+	}
